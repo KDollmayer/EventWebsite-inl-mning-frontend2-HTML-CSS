@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/script/jquery.min.js"></script>
+    <script src="/script/main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="subtitle-div">
+          <h1>Event AB</h1>
+        </div>
+        <div class="menuList">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/allEvents.html">All Events</a></li>
+            <li><a href="/create-event.html">Create Event</a></li>
+            <li><a href="/aboutUs.html">About Us</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="hero-createEvent">
+        <h2>Create Event</h2>
+        <label for="name">Name </label>
+        <input type="text" id="name" />
+        <label for="date">Date</label>
+        <input type="date" id="date" />
+        <label for="description">Description </label>
+        <input type="text" id="description" />
+        <label for="agenda">Agenda </label>
+        <input type="text" id="agenda" />
+        <label for="image">Uppload Images </label>
+        <input type="file" accept="image/*" id="image" />
+        <input type="file" accept="image/*" id="image" />
+        <input type="file" accept="image/*" id="image" />
+        <input type="file" accept="image/*" id="image" />
+        <label for="category">Choose a Category</label>
+
+        <select name="category" id="category">
+          <option value="afterWork">AfterWork</option>
+          <option value="festival">Festival</option>
+          <option value="education">Education</option>
+          <option value="wedding">Wedding</option>
+        </select>
+        <button class="btnUpload">Upload Event</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.2;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+header {
+  display: flex;
+}
+header .subtitle-div {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menuList {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .menuList ul {
+  display: inline-flex;
+  padding: 10px;
+}
+header .menuList ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 1fr;
+}
+.hero .allEvents {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hero .heroImg {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-image: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80);
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+.hero .heroImg img {
+  object-fit: fill;
+}
+.hero .heroEvent {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+.hero .heroEvent .event:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+.hero .heroEvent img {
+  height: 100%;
+  width: 100%;
+}
+.hero .heroEvent .event {
+  margin-top: 0;
+  height: 400px;
+  width: 270px;
+  padding: 10px;
+  margin: 10px;
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .heroEvent .event .eventImg {
+  height: 150px;
+  margin-bottom: 15px;
+  align-items: center;
+  padding: 10px;
+  padding-left: 50px;
+}
+.hero .heroEvent .event .eventInfo ul {
+  margin: 0;
+  text-align: center;
+}
+.hero .heroEvent .event .eventInfo span {
+  font-weight: bold;
+}
+.hero .heroEvent .event .eventInfo button {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+}
+
+button:hover {
+  opacity: 0.3;
+  transform: scale(1.05);
+}
+
+.aboutUs {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUs .aboutUs-sub {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.aboutUs .aboutUs-info {
+  justify-content: center;
+  text-align: center;
+}
+.aboutUs .aboutUs-ceo {
+  display: flex;
+}
+.aboutUs .aboutUs-ceo img {
+  border-radius: 50%;
+}
+.aboutUs .ceoInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.aboutUs .aboutUs-img {
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1558403194-611308249627?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+  height: 400px;
+  width: 100%;
+}
+.aboutUs .aboutUs-input {
+  display: grid;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+}
+.aboutUs .aboutUs-input #message {
+  min-height: 100px;
+}
+
+.hero-createEvent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.hero-createEvent input,
+.hero-createEvent label {
+  padding: 10px;
+}
+.hero-createEvent #date {
+  width: 170px;
+}
+.hero-createEvent #description,
+.hero-createEvent #agenda {
+  width: auto;
+  height: 5rem;
+}
+.hero-createEvent #category {
+  width: 170px;
+}
+.hero-createEvent button {
+  width: 170px;
+}
+
+.hero-readMore {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.readMore-img {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.readMore-img img {
+  width: 300px;
+  padding: 10px;
+}
+.readMore-img img:hover {
+  transform: scale(1.2);
+}
+
+.readMore-info {
+  padding: 10px;
+  display: flex;
+}
+.readMore-info span {
+  font-weight: bold;
+}
+.readMore-info a {
+  font-weight: bold;
+}
+.readMore-info ul {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.readMore-info ul li {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
